@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MX01.MainPage"
+             Title="變更狀態列顏色"
+             xmlns:vm="clr-namespace:MX01"
+             x:DataType="vm:MainPageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BackgroundColor="Red"
+             Shell.BackgroundColor="Red"
+             Shell.TitleColor="White">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="Red"
+                                   StatusBarStyle="LightContent"/>
+    </ContentPage.Behaviors>
+
+    <Grid>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button
+                Text="狀態列變色" 
+                HorizontalOptions="Fill"
+                Command="{Binding ChangeStatuBarColorCommand}"/>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
