@@ -102,7 +102,7 @@
 |MA98|||
 |MA99|||
 |MX01|變更應用程式狀態列 Status Bar 的顏色|使用 .NET MAUI Community Toolkit|
-|MX02|||
+|MX02|修正 Android 平台下的 Entry 控制項將不會有底線的效果||
 |MX03|||
 |MX04|||
 |MX05|||
