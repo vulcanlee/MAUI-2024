@@ -7,4 +7,14 @@ public partial class MainPage : ContentPage
         InitializeComponent();
         BindingContext = mainPageViewModel;
     }
+
+    private void PointerGestureRecognizer_PointerPressed(object sender, PointerEventArgs e)
+    {
+
+    }
+
+    private void PointerGestureRecognizer_PointerReleased(object sender, PointerEventArgs e)
+    {
+
+    }
 }

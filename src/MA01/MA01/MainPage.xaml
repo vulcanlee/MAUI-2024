@@ -8,9 +8,10 @@
     <Grid>
         <Grid.GestureRecognizers>
             <PointerGestureRecognizer
-                        PointerEnteredCommand="{Binding PressCommand}"
                         PointerPressedCommand="{Binding PressCommand}"
                         PointerReleasedCommand="{Binding ReleaseCommand}"
+                        PointerPressed="PointerGestureRecognizer_PointerPressed"
+                        PointerReleased="PointerGestureRecognizer_PointerReleased"
                         />
         </Grid.GestureRecognizers>
 
