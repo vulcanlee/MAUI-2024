@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA03.Views.HomePage"
+             xmlns:vm="clr-namespace:MA03.ViewModels"
+             x:DataType="vm:HomePageViewModel"
+             BackgroundColor="LightGray"
+             Title="HomePage">
+
+    <Grid>
+        <VerticalStackLayout Padding="30">
+            <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Button Text="產品清單" Command="{Binding GoToProductListPageCommand}"
+                    Margin="20"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
