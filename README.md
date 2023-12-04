@@ -5,7 +5,7 @@
 |MA01|長按2秒並觸發命令||
 |MA02|.NET 8 MAUI 專案範本||
 |MA03|頁面導航與路由||
-|MA04|||
+|MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
 |MA05|||
 |MA06|||
 |MA07|||
