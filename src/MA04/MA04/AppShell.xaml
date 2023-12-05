@@ -4,12 +4,15 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MA04"
+    xmlns:views="clr-namespace:MA04.Views"
     Shell.FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="DarkGray"
+    Shell.TitleColor="WhiteSmoke"
     Title="MA04">
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
+        ContentTemplate="{DataTemplate views:HomePage}"
         Route="MainPage" />
 
 </Shell>

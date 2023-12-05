@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MA05.HomePage"
-             Title="Code-Behind 開發練習"
-             BackgroundColor="LightSkyBlue">
+             x:Class="MA04.Views.HomePage"
+             Title="MVVM 開發練習"
+             BackgroundColor="LightSkyBlue"
+             xmlns:viewModel="clr-namespace:MA04.ViewModels"
+             x:DataType="viewModel:HomePageViewModel">
 
     <Grid>
         <VerticalStackLayout
@@ -13,23 +15,24 @@
             <Label 
                 Text="數值 1" HorizontalOptions="Start"
                 FontSize="14" TextColor="Gray"/>
-            <Entry x:Name="Number1" HorizontalOptions="Fill"
-                   TextChanged="Number1_TextChanged"/>
+            <Entry Text="{Binding Number1}" HorizontalOptions="Fill"
+                   Keyboard="Numeric"/>
 
             <Label Margin="0,30,0,0"
                 Text="數值 2" HorizontalOptions="Start"
                 FontSize="14" TextColor="Gray"/>
-            <Entry x:Name="Number2" HorizontalOptions="Fill"
-                   TextChanged="Number2_TextChanged"/>
+            <Entry Text="{Binding Number2}" HorizontalOptions="Fill"
+                   Keyboard="Numeric"/>
 
-            <Label x:Name="Message" Margin="0,30,0,0"
-                Text="錯誤訊息" HorizontalOptions="Start"
+            <Label Margin="0,30,0,0"
+                Text="{Binding Message}" HorizontalOptions="Start"
                 FontSize="18" TextColor="DeepPink" FontAttributes="Bold"/>
 
-            <Label x:Name="Summary" Margin="0,30,0,0"
-                Text="操作摘要" HorizontalOptions="Start"
+            <Label Margin="0,30,0,0"
+                Text="{Binding Summary}" HorizontalOptions="Start"
                 FontSize="28" TextColor="ForestGreen" FontAttributes="Bold"/>
 
         </VerticalStackLayout>
     </Grid>
+
 </ContentPage>

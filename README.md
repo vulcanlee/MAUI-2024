@@ -5,9 +5,9 @@
 |MA01|長按2秒並觸發命令||
 |*MA02|.NET 8 MAUI 專案範本||
 |MA03|頁面導航與路由||
-|MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
+|*MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
 |*MA05|使用 Code-Behind 方式進行 MAUI 專案開發||
-|MA06|||
+|MA06|修正 SplashScreen 啟動顯示畫面 與 Icon 圖示 和應用程式名稱||
 |MA07|||
 |MA08|||
 |MA09|||
