@@ -3,10 +3,10 @@
 |專案名稱|專案說明|備註|
 |-|-|-|
 |MA01|長按2秒並觸發命令||
-|MA02|.NET 8 MAUI 專案範本||
+|*MA02|.NET 8 MAUI 專案範本||
 |MA03|頁面導航與路由||
 |MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
-|MA05|||
+|*MA05|使用 Code-Behind 方式進行 MAUI 專案開發||
 |MA06|||
 |MA07|||
 |MA08|||
@@ -101,7 +101,7 @@
 |MA97|||
 |MA98|||
 |MA99|||
-|MX01|變更應用程式狀態列 Status Bar 的顏色|使用 .NET MAUI Community Toolkit|
+|*MX01|變更應用程式狀態列 Status Bar 的顏色|使用 .NET MAUI Community Toolkit|
 |MX02|修正 Android 平台下的 Entry 控制項將不會有底線的效果||
 |MX03|||
 |MX04|||
