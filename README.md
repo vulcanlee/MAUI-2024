@@ -8,7 +8,7 @@
 |*MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
 |*MA05|使用 Code-Behind 方式進行 MAUI 專案開發||
 |MA06|修正 SplashScreen 啟動顯示畫面 與 Icon 圖示 和應用程式名稱||
-|MA07|||
+|MA07|使用服務定位器 Service Locator 手動注入相依物件||
 |MA08|||
 |MA09|||
 |MA10|||
