@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA09.Views.Number3Page"
+             Title="Number3Page"
+             Shell.NavBarIsVisible="True"
+             BackgroundColor="LightGray"
+             xmlns:viewmodels="clr-namespace:MA09.ViewModel"
+             x:DataType="viewmodels:Number3PageViewModel"
+             >
+    <Grid>
+        <VerticalStackLayout
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+            <Label 
+                Text="App 首頁"
+                FontSize="24" />
+            <Button Text="重新登入"
+                    Command="{Binding GoNextPageCommand}"
+                    />
+            <Button Text="查看明細"
+                    Command="{Binding GoDetailPageCommand}"
+                    />
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
