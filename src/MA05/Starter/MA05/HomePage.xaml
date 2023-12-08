@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA05.HomePage"
+             Title="Code-Behind 開發練習"
+             BackgroundColor="LightSkyBlue">
+
+    <Grid>
+        <VerticalStackLayout
+            Padding="30"
+            HorizontalOptions="Fill" VerticalOptions="Start">
+
+            <Label 
+                Text="數值 1" HorizontalOptions="Start"
+                FontSize="14" TextColor="Gray"/>
+            <Entry HorizontalOptions="Fill"/>
+
+            <Label Margin="0,30,0,0"
+                Text="數值 2" HorizontalOptions="Start"
+                FontSize="14" TextColor="Gray"/>
+            <Entry HorizontalOptions="Fill"/>
+
+            <Label Margin="0,30,0,0"
+                Text="錯誤訊息" HorizontalOptions="Start"
+                FontSize="18" TextColor="DeepPink" FontAttributes="Bold"/>
+
+            <Label Margin="0,30,0,0"
+                Text="操作摘要" HorizontalOptions="Start"
+                FontSize="28" TextColor="ForestGreen" FontAttributes="Bold"/>
+
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
