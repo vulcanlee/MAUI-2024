@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Todo : 加入 views 命名空間-->
+<!-- Todo : 變更工具的顏色 FlyoutBehavior BackgroundColor TitleColor -->
+<Shell
+    x:Class="MA04.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MA04"
+    xmlns:views="clr-namespace:MA04.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Shell.BackgroundColor="DarkGray"
+    Shell.TitleColor="WhiteSmoke"
+    Title="MA04">
+
+    <!--Todo : 將第一個看到頁面，修改成為 HomePage -->
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+</Shell>
