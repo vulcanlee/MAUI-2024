@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MA11.Views.HomePage"
+             Title="頁面導航之參數傳遞"
+             BackgroundColor="LightPink"
+             xmlns:viewmodel="clr-namespace:MA11.ViewModels"
+             x:DataType="viewmodel:HomePageViewModel"
+             >
+
+    <Grid>
+        <VerticalStackLayout
+            Padding="30"
+            HorizontalOptions="Fill" VerticalOptions="Start">
+
+            <Label 
+                Text="數值 1" HorizontalOptions="Start"
+                FontSize="14" TextColor="Gray"/>
+            <Entry Text="{Binding Value1}" HorizontalOptions="Fill"/>
+
+            <Label Margin="0,30,0,0"
+                Text="數值 2" HorizontalOptions="Start"
+                FontSize="14" TextColor="Gray"/>
+            <Entry Text="{Binding Value2}" HorizontalOptions="Fill"/>
+
+            <Button Margin="0,30,0,0"
+                    HorizontalOptions="Fill"
+                    Text="計算"
+                    Command="{Binding ShowSumResultCommand}"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
