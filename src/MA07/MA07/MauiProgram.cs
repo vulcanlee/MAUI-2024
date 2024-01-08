@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using MA07.Services;
+using Microsoft.Extensions.Logging;
 
 namespace MA07
 {
@@ -14,6 +15,9 @@ namespace MA07
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            builder.Services.AddTransient<ICommonService, CommonService>();
+            builder.Services.AddTransient<ICustomService, CommonService>();
 
 #if DEBUG
     		builder.Logging.AddDebug();
