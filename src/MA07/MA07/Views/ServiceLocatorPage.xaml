@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MA07.ViewModels;assembly=MA07"
+             x:DataType="viewModels:ServiceLocatorPageViewModel"
+             x:Class="MA07.Views.ServiceLocatorPage"
+             Title="服務定位器的使用">
+    
+    <VerticalStackLayout Padding="20">
+        <Label 
+            Text="請輸入你的名稱" HorizontalOptions="Start" />
+        <Entry Text="{Binding Name}"/>
+
+        <HorizontalStackLayout>
+            <Label Text="發送電子郵件的訊息" HorizontalOptions="Start" />
+            <Switch IsToggled="{Binding NeedSendEmail}" />
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout>
+            <Label Text="發送簡訊的訊息" HorizontalOptions="Start" />
+            <Switch IsToggled="{Binding NeedSendSms}" />
+        </HorizontalStackLayout>
+        <HorizontalStackLayout>
+            <Label Text="發送Line的訊息" HorizontalOptions="Start" />
+            <Switch IsToggled="{Binding NeedSendLine}" />
+        </HorizontalStackLayout>
+        
+        <Button Margin="20" Text="送出" Command="{Binding SayHelloCommand}" />
+        
+        <Label Margin="0,20" Text="送出日誌" HorizontalOptions="Fill" />
+        <Label 
+            Text="{Binding EchoEmailMessage}"
+            FontSize="20" TextColor="Orange" HorizontalOptions="Start" />
+        <Label 
+            Text="{Binding EchoLineMessage}"
+            FontSize="20" TextColor="Green" HorizontalOptions="Start" />
+        <Label 
+            Text="{Binding EchoSmsMessage}"
+            FontSize="20" TextColor="Blue" HorizontalOptions="Start" />
+    </VerticalStackLayout>
+    
+</ContentPage>
