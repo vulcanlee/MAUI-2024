@@ -2,66 +2,60 @@
 using CommunityToolkit.Mvvm.Input;
 using MA07.Helpers;
 using MA07.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace MA07.ViewModels
+namespace MA07.ViewModels;
+
+public partial class ServiceLocatorPageViewModel : ObservableObject
 {
-    public partial class ServiceLocatorPageViewModel : ObservableObject
+    private readonly IServiceProvider serviceProvider;
+    [ObservableProperty]
+    string name = string.Empty;
+    [ObservableProperty]
+    string echoEmailMessage = string.Empty;
+    [ObservableProperty]
+    string echoSmsMessage = string.Empty;
+    [ObservableProperty]
+    string echoLineMessage = string.Empty;
+    [ObservableProperty]
+    bool needSendEmail = false;
+    [ObservableProperty]
+    bool needSendSms = false;
+    [ObservableProperty]
+    bool needSendLine = false;
+
+    public ServiceLocatorPageViewModel(IServiceProvider serviceProvider)
     {
-        private readonly IServiceProvider serviceProvider;
-        [ObservableProperty]
-        string name = string.Empty;
-        [ObservableProperty]
-        string echoEmailMessage = string.Empty;
-        [ObservableProperty]
-        string echoSmsMessage = string.Empty;
-        [ObservableProperty]
-        string echoLineMessage = string.Empty;
-        [ObservableProperty]
-        bool needSendEmail = false;
-        [ObservableProperty]
-        bool needSendSms = false;
-        [ObservableProperty]
-        bool needSendLine = false;
+        this.serviceProvider = serviceProvider;
+    }
 
-        public ServiceLocatorPageViewModel(IServiceProvider serviceProvider)
+    [RelayCommand]
+    public void SayHello()
+    {
+        EchoEmailMessage = string.Empty;
+        EchoSmsMessage = string.Empty;
+        EchoLineMessage = string.Empty;
+
+        ISendMessageService sendHelloMessageService;
+        if (NeedSendEmail)
         {
-            this.serviceProvider = serviceProvider;
+            //sendHelloMessageService = serviceProvider.GetService<SendEmailService>();
+            sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Email);
+            this.EchoEmailMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
         }
 
-        [RelayCommand]
-        public void SayHello()
+        if (NeedSendSms)
         {
-            EchoEmailMessage = string.Empty;
-            EchoSmsMessage = string.Empty;
-            EchoLineMessage = string.Empty;
-
-            ISendMessageService sendHelloMessageService;
-            if (NeedSendEmail)
-            {
-                //sendHelloMessageService = serviceProvider.GetService<SendEmailService>();
-                sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Email);
-                this.EchoEmailMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
-            }
-
-            if (NeedSendSms)
-            {
-                //sendHelloMessageService = serviceProvider.GetService<SendSmsService>();
-                sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Sms);
-                this.EchoSmsMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
-            }
-
-            if (NeedSendLine)
-            {
-                //sendHelloMessageService = serviceProvider.GetService<SendLineService>();
-                sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Line);
-                this.EchoLineMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
-            }
-
+            //sendHelloMessageService = serviceProvider.GetService<SendSmsService>();
+            sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Sms);
+            this.EchoSmsMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
         }
+
+        if (NeedSendLine)
+        {
+            //sendHelloMessageService = serviceProvider.GetService<SendLineService>();
+            sendHelloMessageService = SendMessageFactory.Get(Enums.SendMessageTypeEnum.Line);
+            this.EchoLineMessage = sendHelloMessageService.SayHello(Name, "今日天氣晴");
+        }
+
     }
 }
