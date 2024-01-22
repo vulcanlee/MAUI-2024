@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MA10"
+             x:DataType="local:MainPageViewModel"
+             x:Class="MA10.MainPage"
+             Title="MA10 探究 BindingContext">
+
+    <Grid>
+        <VerticalStackLayout
+            Padding="30,0" Spacing="25"
+            VerticalOptions="Fill">
+            <Label Text="頁面 的 BindingContext" />
+            <Label Text="{Binding .}" TextColor="Orange"/>
+            <Label Text="{Binding Path=AppName, StringFormat='顯示 BindingContext 下的綁定值 [{0}]'}"
+                   TextColor="Green"/>
+            
+            <StackLayout Orientation="Vertical" 
+                         BindingContext="{Binding DetailItem}">
+                <Label Text="StackLayout 的 BindingContext" />
+                <Label Text="{Binding .}" TextColor="Orange"/>
+                <Label Text="{Binding Path=Now, StringFormat='顯示 BindingContext 下的綁定值 [{0}]'}"
+                   TextColor="Green" x:DataType="local:DetailItem"/>
+            </StackLayout>
+
+            <CollectionView ItemsSource="{Binding AllItems}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="local:MyItem">
+                        <StackLayout Orientation="Vertical" Margin="10">
+                            <Label Text="DataTemplate 的 BindingContext" />
+                            <Label Text="{Binding .}" TextColor="Orange"/>
+                            <Label Text="{Binding Path=Name, StringFormat='顯示 BindingContext 下的綁定值 [{0}]'}" TextColor="Green"/>
+                            <Label Text="{Binding Path=Age, StringFormat='顯示 BindingContext 下的綁定值 [{0}]'}" TextColor="Green"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>
