@@ -1,7 +1,6 @@
-﻿namespace MA08
+﻿namespace MA08;
+
+public interface IValueAddService
 {
-    public interface IValueAddService
-    {
-        int Add(int value1, int value2);
-    }
+    int Add(int value1, int value2);
 }
