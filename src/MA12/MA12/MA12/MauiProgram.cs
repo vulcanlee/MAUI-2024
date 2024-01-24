@@ -24,6 +24,9 @@ public static class MauiProgram
 
         builder.Services.AddTransientWithShellRoute<MainPage, MainPageViewModel>(MagicValueHelper.MainPage);
 
+        //builder.Services.AddTransient<MainPage>();
+        //builder.Services.AddTransient<MainPageViewModel>();
+
         builder.Services.AddTransient<CounterService>();
 
 
