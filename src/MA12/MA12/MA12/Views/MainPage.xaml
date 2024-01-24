@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:MA12.ViewModels;assembly=MA12"
+             xmlns:helpers="clr-namespace:MA12.Helpers"
+             x:DataType="viewModels:MainPageViewModel"
+             x:Class="MA12.Views.MainPage"
+             Title="{Binding Title}">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+                <Label Text="&#xF1322;" FontSize="40" TextColor="Red"
+                       FontFamily="{Static helpers:MagicValueHelper.FontName}" />
+
+                <Image
+                    WidthRequest="40" HeightRequest="40" BackgroundColor="HotPink">
+                    <Image.Source>
+                        <FontImageSource Glyph="&#xF1322;"
+                                         FontFamily="{Static helpers:MagicValueHelper.FontName}"/>
+                    </Image.Source>
+                </Image>
+            </HorizontalStackLayout>
+
+            <Label
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"/>
+            
+            <Label HorizontalOptions="Center"
+                Text="{Binding MessagerText}"
+                FontSize="32" TextColor="DarkViolet"/>
+
+            <Button
+                Text="{Binding ButtonTitle}" 
+                Command="{Binding CounterClickedCommand}"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

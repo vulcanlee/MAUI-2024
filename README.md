@@ -11,9 +11,9 @@
 |*MA07|使用服務定位器 Service Locator 手動注入相依物件||
 |*MA08|MAUI 相依性服務注入||
 |MA09|通用導航應用情境 Splash - Login - Home - Detail||
-|MA10|查看當前 BindingContext 使用的物件型別||
+|*MA10|查看當前 BindingContext 使用的物件型別||
 |MA11|頁面導航的參數傳遞用法||
-|MA12|||
+|*MA12|使用客製化 MAUI 專案範本來進行開發||
 |MA13|||
 |MA14|||
 |MA15|||
