@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MA12.Services;
+﻿namespace MA12.Services;
 
 public class CounterService
 {

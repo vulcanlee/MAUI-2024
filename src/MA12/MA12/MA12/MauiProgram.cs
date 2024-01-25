@@ -23,6 +23,7 @@ public static class MauiProgram
             });
 
         builder.Services.AddTransientWithShellRoute<MainPage, MainPageViewModel>(MagicValueHelper.MainPage);
+        builder.Services.AddTransientWithShellRoute<MyFirstPage, MyFirstPageViewModel>(nameof(MyFirstPage));
 
         //builder.Services.AddTransient<MainPage>();
         //builder.Services.AddTransient<MainPageViewModel>();
