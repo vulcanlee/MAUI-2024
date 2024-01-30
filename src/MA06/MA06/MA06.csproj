@@ -24,7 +24,7 @@
 		<ApplicationTitle>我的 App</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.ma06</ApplicationId>
+		<ApplicationId>com.vulcan.minicar</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
