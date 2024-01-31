@@ -1,5 +1,9 @@
 # MAUI-2024 精通 .NET MAUI 跨平台程式設計 練習專案原始碼
 
+Building Apps with XAML and .NET MAUI - Visual Studio Toolbox
+
+https://www.youtube.com/playlist?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X
+
 |專案名稱|專案說明|備註|
 |-|-|-|
 |MA01|長按2秒並觸發命令||
@@ -14,8 +18,8 @@
 |*MA10|查看當前 BindingContext 使用的物件型別||
 |MA11|頁面導航的參數傳遞用法||
 |*MA12|使用客製化 MAUI 專案範本來進行開發||
-|MA13|||
-|MA14|||
+|MA13|建立與使用.NET MAUI Blazor Hybrid 應用程式||
+|MA14|了解 INotifyPropertyChange 實作與運作行為||
 |MA15|||
 |MA16|||
 |MA17|||
