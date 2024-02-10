@@ -11,6 +11,9 @@
             <Entry x:Name="UserNameEntry"
                    Text="{Binding UserName}"/>
             <Label x:Name="UserNameLabel"/>
+            <Entry x:Name="AgeEntry"
+                   Text="{Binding Age}"/>
+            <Label x:Name="AgeLabel"/>
             <Button
                 x:Name="SayHiBtn"
                 Text="Hi" Clicked="SayHiBtnClicked"

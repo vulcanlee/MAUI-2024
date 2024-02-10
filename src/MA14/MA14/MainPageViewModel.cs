@@ -39,6 +39,25 @@ namespace MA14
                 }
             }
         }
+
+        int age = 0;
+        public int Age
+        {
+            get
+            {
+                return this.age;
+            }
+
+            set
+            {
+                if (value != this.age)
+                {
+                    this.age = value;
+                    NotifyPropertyChanged();
+                    Debug.WriteLine($"[ViewModel] 的 Age 屬性有變動 : {this.age}");
+                }
+            }
+        }
         #endregion
     }
 }
