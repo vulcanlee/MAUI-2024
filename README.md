@@ -20,7 +20,7 @@ https://www.youtube.com/playlist?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X
 |*MA12|使用客製化 MAUI 專案範本來進行開發||
 |*MA13|建立與使用.NET MAUI Blazor Hybrid 應用程式||
 |MA14|了解 INotifyPropertyChange 實作與運作行為||
-|MA15|||
+|MA15|使用 Blazor Hybrid 設計計算機功能||
 |MA16|||
 |MA17|||
 |MA18|||
