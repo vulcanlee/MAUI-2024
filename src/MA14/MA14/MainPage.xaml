@@ -10,10 +10,12 @@
 
             <Entry x:Name="UserNameEntry"
                    Text="{Binding UserName}"/>
-            <Label x:Name="UserNameLabel"/>
+            <Label x:Name="UserNameLabel"
+                   Text="{Binding UserName}"/>
             <Entry x:Name="AgeEntry"
                    Text="{Binding Age}"/>
-            <Label x:Name="AgeLabel"/>
+            <Label x:Name="AgeLabel"
+                   Text="{Binding Age}"/>
             <Button
                 x:Name="SayHiBtn"
                 Text="Hi" Clicked="SayHiBtnClicked"
