@@ -16,6 +16,8 @@ namespace MA15
 
             builder.Services.AddMauiBlazorWebView();
 
+            builder.Services.AddTransient<AddingCalculatorService>();
+
 #if DEBUG
     		builder.Services.AddBlazorWebViewDeveloperTools();
     		builder.Logging.AddDebug();
