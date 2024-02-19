@@ -8,7 +8,7 @@ https://www.youtube.com/playlist?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X
 |-|-|-|
 |MA01|長按2秒並觸發命令||
 |*MA02|.NET 8 MAUI 專案範本||
-|MA03|頁面導航與路由||
+|*MA03|頁面導航與路由||
 |*MA04|使用微軟 Community Toolkit MVVM 套件進行資料綁定開發||
 |*MA05|使用 Code-Behind 方式進行 MAUI 專案開發||
 |*MA06|修正 SplashScreen 啟動顯示畫面 與 Icon 圖示 和應用程式名稱||
@@ -21,8 +21,8 @@ https://www.youtube.com/playlist?list=PLReL099Y5nRdDJre4TGscXx3EzV74O04X
 |*MA13|建立與使用.NET MAUI Blazor Hybrid 應用程式||
 |*MA14|了解 INotifyPropertyChanged 實作與運作行為||
 |*MA15|使用 Blazor Hybrid 設計計算機功能||
-|MA16|||
-|MA17|||
+|MA16|透過 XAML 設計使用者註冊與登入頁面||
+|MA17|使用者登入過程要透過 Web API 驗證||
 |MA18|||
 |MA19|||
 |MA20|||
