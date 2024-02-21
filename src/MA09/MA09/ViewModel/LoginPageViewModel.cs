@@ -8,16 +8,11 @@ using System.Threading.Tasks;
 
 namespace MA09.ViewModel;
 
-public partial class Number3PageViewModel:ObservableObject
+public partial class LoginPageViewModel : ObservableObject
 {
     [RelayCommand]
     void GoNextPage()
     {
-        Shell.Current.GoToAsync("///Number2");
-    }
-    [RelayCommand]
-    void GoDetailPage()
-    {
-        Shell.Current.GoToAsync("Detail1Page");
+        Shell.Current.GoToAsync("///Home");
     }
 }

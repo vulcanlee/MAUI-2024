@@ -2,9 +2,9 @@ using MA09.ViewModel;
 
 namespace MA09.Views;
 
-public partial class Number2Page : ContentPage
+public partial class HomePage : ContentPage
 {
-	public Number2Page(Number2PageViewModel viewModel)
+	public HomePage(HomePageViewModel viewModel)
 	{
 		InitializeComponent();
 		BindingContext = viewModel;

@@ -12,17 +12,17 @@
     >
 
     <ShellContent
-        Title="Number1"
-        ContentTemplate="{DataTemplate view:Number1Page}"
-        Route="Number1" />
+        Title="Splash"
+        ContentTemplate="{DataTemplate view:SplashPage}"
+        Route="Splash" />
     <ShellContent
-        Title="Number2"
-        ContentTemplate="{DataTemplate view:Number2Page}"
-        Route="Number2" />
+        Title="Login"
+        ContentTemplate="{DataTemplate view:LoginPage}"
+        Route="Login" />
     <ShellContent
-        Title="Number3"
-        ContentTemplate="{DataTemplate view:Number3Page}"
-        Route="Number3" />
+        Title="Home"
+        ContentTemplate="{DataTemplate view:HomePage}"
+        Route="Home" />
     <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"

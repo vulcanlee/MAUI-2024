@@ -18,14 +18,14 @@ namespace MA09
                 });
 
             builder.Services.AddTransient<MainPage>();
-            builder.Services.AddTransient<Number1Page>();
-            builder.Services.AddTransient<Number1PageViewModel>();
-            builder.Services.AddTransient<Number2Page>();
-            builder.Services.AddTransient<Number2PageViewModel>();
-            builder.Services.AddTransient<Number3Page>();
-            builder.Services.AddTransient<Number3PageViewModel>();
-            builder.Services.AddTransient<Detail1Page>();
-            builder.Services.AddTransient<Detail1PageViewModel>();
+            builder.Services.AddTransient<SplashPage>();
+            builder.Services.AddTransient<SplashPageViewModel>();
+            builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<LoginPageViewModel>();
+            builder.Services.AddTransient<HomePage>();
+            builder.Services.AddTransient<HomePageViewModel>();
+            builder.Services.AddTransient<DetailPage>();
+            builder.Services.AddTransient<DetailPageViewModel>();
 
 #if DEBUG
             builder.Logging.AddDebug();

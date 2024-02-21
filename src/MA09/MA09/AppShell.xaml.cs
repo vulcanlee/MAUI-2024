@@ -8,7 +8,7 @@ namespace MA09
         {
             InitializeComponent();
 
-            Routing.RegisterRoute(nameof(Detail1Page), typeof(Detail1Page));
+            Routing.RegisterRoute(nameof(DetailPage), typeof(DetailPage));
         }
     }
 }

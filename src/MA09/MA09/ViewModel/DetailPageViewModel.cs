@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace MA09.ViewModel;
 
-public partial class Detail1PageViewModel : ObservableObject
+public partial class DetailPageViewModel : ObservableObject
 {
     [RelayCommand]
     void GoBackPage()

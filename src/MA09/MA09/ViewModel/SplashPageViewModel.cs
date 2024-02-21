@@ -3,11 +3,11 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace MA09.ViewModel;
 
-public partial class Number1PageViewModel : ObservableObject
+public partial class SplashPageViewModel : ObservableObject
 {
     [RelayCommand]
     void GoNextPage()
     {
-        Shell.Current.GoToAsync("///Number2");
+        Shell.Current.GoToAsync("///Login");
     }
 }
