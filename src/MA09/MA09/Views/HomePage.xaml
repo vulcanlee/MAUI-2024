@@ -16,7 +16,7 @@
                 Text="App 首頁"
                 FontSize="24" />
             <Button Text="重新登入"
-                    Command="{Binding GoNextPageCommand}"
+                    Command="{Binding GoLogintPageCommand}"
                     />
             <Button Text="查看明細"
                     Command="{Binding GoDetailPageCommand}"
