@@ -11,7 +11,7 @@ namespace MA09.ViewModel;
 public partial class HomePageViewModel:ObservableObject
 {
     [RelayCommand]
-    void GoNextPage()
+    void GoLogintPage()
     {
         Shell.Current.GoToAsync("///Login");
     }
